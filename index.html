@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>WeatherApp</h1>
+
+        <!--  tab-conatainer_here -->
+        <div class="tab-container tab-area">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <!-- saerch-container-here -->
+
+        <form class="search-container searchArea">
+            <input class="input-bar" data-searchInput placeholder="Search for City....">
+            <button type="submit" class="btn" >
+                <img src="./image/search.png" alt="search-logo-here" class="search_img" loading="lazy" width="20px" height="20px">
+            </button>
+        </form>
+
+        <!-- Grant Loacation Acess -->
+
+        <div class="grantlocationAcess  grantArea">
+            <img src="./image/location.png" alt=""  width="80px" height="80px">
+            <p>Grant Location Acess</p> 
+            <p>Allow Acess to get weather Inforation</p>
+
+            <button class="btn" data-grantAcessbtn>Grant Acess</button>
+        </div>
+
+
+        <!-- loading screen -->
+
+        <div class="loadingScreen loadingArea">
+            <img src="./image/loading.gif" alt="" width="80px" height="80px">
+            <p>Loading...</p>
+        </div>
+
+
+        <!-- userInformation -->
+
+        <div class="userInformation  userInfo">
+            <div class="local-location">
+                <p data-cityName></p>
+                <img src=""  data-cityIcon >
+            </div>
+
+            <!-- whether description -->
+            <p class="whetherDescription" data-des></p>
+            <!-- whether icon -->
+            <img src=""   data-whetherIcon>
+            <!-- whether tempreture -->
+            <p data-whetherTemp class="whTemp"></p>
+ 
+            <!-- parameter-area of user-location -->
+            <div class="parameter">
+                <div class="wind-speed">
+                    <img src="/image/wind.png" alt="" height="80px" width="80px">
+                    <p>WindSpeed</p>
+                    <p data-windspeed></p>
+                </div>
+
+
+                <div class="humidity">
+                    <img src="/image/humidity.png" alt=""  height="80px" width="80px">
+                    <p>Humidity</p>
+                    <p data-humidity></p>
+                </div>
+
+
+                <div class="clouds">
+                    <img src="/image/cloud.png" alt=""  height="80px" width="80px">
+                    <p>Clouds</p>
+                    <p data-clouds></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
